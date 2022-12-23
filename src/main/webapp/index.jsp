@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>메인화면</title>
-<link rel="stylesheet" href = "style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<%@ include file = "topmenu.jsp" %>
+<%@ include file="topmenu.jsp" %>
 	<section>
 		<p>백신접종 예약을 위한 프로그램이다.</p>
 		<br>
@@ -17,6 +17,6 @@
 			예약 조회를 할 수 있도록 프로그램을 작성한다.
 		</p>
 	</section>
-<%@ include file = "footer.jsp" %>
+<%@ include file="footer.jsp" %>
 </body>
-</html>
+</html>	

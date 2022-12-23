@@ -28,7 +28,7 @@ public class VaccineResvController extends HttpServlet {
 		doPro(request, response);
 	}
 
-	public void doPro(HttpServletRequest request, HttpServletResponse response) {
+	public void doPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String context = request.getContextPath();
 		String command = request.getServletPath();
 		String site = null;
@@ -37,9 +37,14 @@ public class VaccineResvController extends HttpServlet {
 		System.out.println(command);
 
 		switch(command) {
+		case "/home" : 
+			site = "index.jsp";
+			break;
 		
 		}
+		
+		getServletContext().getRequestDispatcher("/"+ site).forward(request, response);
+		
 	}
-	
 	
 }
